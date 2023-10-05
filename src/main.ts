@@ -8,7 +8,7 @@ async function bootstrap() {
   app.enableCors({
     origin: ['http://localhost:3000', 'https://finance-control-mu.vercel.app'],
     allowedHeaders: ['Accept', 'Content-Type'],
-    methods: ['GET', 'PUT', 'POST', 'DELETE'],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     preflightContinue: false,
     optionsSuccessStatus: 204,
     credentials: true,
