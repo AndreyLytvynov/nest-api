@@ -9,7 +9,7 @@ async function bootstrap() {
   });
   app.enableCors({
     origin: '*',
-    methods: '*',
+    methods: 'GET,PUT,POST,DELETE,UPDATE,OPTIONS',
     credentials: true,
   });
   app.useGlobalPipes(new ValidationPipe());
