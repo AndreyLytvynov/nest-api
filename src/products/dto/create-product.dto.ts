@@ -6,7 +6,7 @@ export class CreateProductDto {
 
   @IsString()
   @IsNotEmpty()
-  readonly date: string;
+  readonly date: number;
 
   @IsString()
   @IsNotEmpty()

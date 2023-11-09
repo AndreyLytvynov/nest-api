@@ -9,7 +9,7 @@ export class UpdateProductDto {
   @IsOptional()
   @IsString()
   @IsNotEmpty()
-  readonly buyDate: string;
+  readonly buyDate: number;
 
   @IsOptional()
   @IsString()

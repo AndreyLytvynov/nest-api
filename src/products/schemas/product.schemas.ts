@@ -9,7 +9,7 @@ export class Product {
   productName: string;
 
   @Prop({ required: true })
-  date: string;
+  date: number;
 
   @Prop({ required: true })
   status: string;
@@ -24,7 +24,7 @@ export class Product {
     type: mongoose.Schema.Types.Mixed,
   })
   bought: {
-    buyDate: string;
+    buyDate: number;
     buyer: string;
   };
 
