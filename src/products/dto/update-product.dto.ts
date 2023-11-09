@@ -7,7 +7,7 @@ export class UpdateProductDto {
   readonly price: number;
 
   @IsOptional()
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   readonly buyDate: number;
 

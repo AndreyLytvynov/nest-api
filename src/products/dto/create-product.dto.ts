@@ -1,11 +1,11 @@
-import { IsNotEmpty, IsString } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class CreateProductDto {
   @IsString()
   readonly productName: string;
 
-  @IsString()
   @IsNotEmpty()
+  @IsNumber()
   readonly date: number;
 
   @IsString()
